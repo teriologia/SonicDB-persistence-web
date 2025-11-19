@@ -1,0 +1,41 @@
+{
+  "name": "@teriologia/sonicdb-persistence-web",
+  "version": "0.1.0",
+  "description": "IndexedDB persistence plugin for SonicDB running in browser environments.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/mjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:mjs": "tsc -p tsconfig.mjs.json",
+    "build": "npm run build:cjs && npm run build:mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "sonicdb",
+    "indexeddb",
+    "persistence",
+    "browser",
+    "database"
+  ],
+  "author": "Teriologia <Mehmetserdartekin@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@teriologia/sonicdb": "^0.2.5"
+  },
+  "peerDependencies": {
+    "@teriologia/sonicdb": "^0.2.5"
+  }
+}
