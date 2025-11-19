@@ -37,7 +37,7 @@ npm install @teriologia/sonicdb @teriologia/sonicdb-persistence-web
 *  **On Server Shutdown**: Ensure db.save() is called when your Node.js process receives a termination signal (SIGINT, SIGTERM).
 ---
 
-## 👨‍💻 How to Use (Node.js Example)
+## 👨‍💻 How to Use (JS Example)
 
 **Step 1: Initialize, Use Plugin, and Load Data**
 
